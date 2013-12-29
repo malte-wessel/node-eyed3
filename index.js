@@ -72,6 +72,7 @@ EyeD3.prototype.buildArgs = function(meta) {
 	if(meta.album)   args.push('-A', meta.album);
 	if(meta.comment) args.push('-c', '::' + meta.comment);
 	if(meta.cover) args.push('--add-image', meta.cover + ':FRONT_COVER');
+	if(meta.track_num) args.push('-n', meta.track_num);
 
 	return args;
 };
